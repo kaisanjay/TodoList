@@ -4,16 +4,9 @@ import "./TodoList.css";
 
 
 class TodoList extends React.Component {
-	constructor(props) {
-		super(props);
-
-		this.state = {
+	state = {
 			items: []
 		};
-
-        
-        
-	}
 
 	addItem =(e) => {
 		if (this._inputElement.value !== "") {
