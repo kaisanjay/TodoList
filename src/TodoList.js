@@ -30,8 +30,8 @@ class TodoList extends React.Component {
 	}
 
 	deleteItem =(key) => {
-		var filteredItems = this.state.items.filter(function (item) {
-			return (item.key !== key)
+		var filteredItems = this.state.items.filter( (item) => {
+			 (item.key !== key)
 		});
 		this.setState({
 			items: filteredItems
