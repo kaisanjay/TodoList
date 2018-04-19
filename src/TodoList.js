@@ -11,11 +11,11 @@ class TodoList extends React.Component {
 			items: []
 		};
 
-        this.addItem = this.addItem.bind(this);
+        
         this.deleteItem = this.deleteItem.bind(this);
 	}
 
-	addItem(e) {
+	addItem =(e) => {
 		if (this._inputElement.value !== "") {
 			var newItem = {
 				text: this._inputElement.value,
